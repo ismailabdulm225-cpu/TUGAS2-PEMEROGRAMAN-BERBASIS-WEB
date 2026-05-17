@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Aplikasi SITTA</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="dashboard-page">
-
     <div id="app">
         <!-- DASHBOARD -->
         <main class="dashboard-sitta">
             <!-- HEADER -->
             <header class="dashboard-header">
-
                 <div class="header-left">
                     <img src="img/logo-ut.png" alt="Logo UT" class="logo-ut">
                     <div>
@@ -26,57 +23,38 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="header-right">
                     <h3>{{ greeting }}</h3>
                 </div>
-
             </header>
 
             <!-- MENU DASHBOARD -->
             <section class="dashboard-menu">
-
                 <!-- MENU 1 -->
                 <a href="stok.html" class="menu-card">
-
                     <div class="menu-icon">
                         <i data-lucide="book" class="icon-book"></i>
                     </div>
-
                     <h3>Informasi Bahan Ajar</h3>
-
-                    <p>
-                        Melihat stok dan informasi bahan ajar.
-                    </p>
-
+                    <p>Melihat stok dan informasi bahan ajar.</p>
                 </a>
-
                 <!-- MENU 2 -->
                 <a href="tracking.html" class="menu-card">
-
                     <div class="menu-icon">
                         <i data-lucide="truck" class="icon-truck"></i>
                     </div>
-
                     <h3>Tracking Pengiriman</h3>
-
-                    <p>
-                        Melacak status pengiriman bahan ajar.
-                    </p>
-
+                    <p>Melacak status pengiriman bahan ajar.</p>
                 </a>
-
             </section>
-
         </main>
 
         <footer class="footer">
             <p class="title">&copy; Ismail Abdul Malik</p>
         </footer>
-        <!-- VUE JS -->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-        <!-- JS -->
+        <!-- VUE JS - js - lucide icons -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/script.js"></script>
         <script src="js/index-app.js"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
