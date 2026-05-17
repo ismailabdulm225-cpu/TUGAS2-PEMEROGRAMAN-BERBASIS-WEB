@@ -1,7 +1,4 @@
-/* =====================================
-   GLOBAL
-===================================== */
-
+/* ==== GLOBAL ====*/
 * {
     margin: 0;
     padding: 0;
@@ -19,24 +16,18 @@ body {
 }
 
 @keyframes bgMove {
-
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
 }
 
-/* =====================================
-   LOGIN PAGE
-===================================== */
-
+/* ==== LOGIN PAGE ==== */
 body.login-page {
     display: flex;
     justify-content: center;
@@ -55,29 +46,7 @@ body.login-page {
     transition: 0.3s;
 }
 
-body.morning #greeting {
-    background: linear-gradient(135deg, #a8e6ff, #ffffff);
-    color: #1e2a38;
-}
-
-body.afternoon #greeting {
-    background: linear-gradient(135deg, #fff3b0, #ffffff);
-    color: #1e2a38;
-}
-
-body.evening #greeting {
-    background: linear-gradient(135deg, #ffd6a5, #ffffff);
-    color: #1e2a38;
-}
-
-body.night #greeting {
-    background: linear-gradient(135deg, #1e2a38, #2d3e50);
-    color: white;
-}
-
-/* =====================================
-   DASHBOARD
-===================================== */
+/* ==== DASHBOAR ==== */
 .dashboard-sitta {
     max-width: 1200px;
     margin: 40px auto;
@@ -245,9 +214,7 @@ body.night #greeting {
 }
 
 
-/* =====================================
-            STOCK DASHBOARD
-===================================== */
+/* ==== STOCK DASHBOARD ==== */
 .stok-modern {
     max-width: 1200px;
     margin: 30px auto;
@@ -258,9 +225,7 @@ body.night #greeting {
     font-family: Arial, sans-serif;
 }
 
-/* =====================================
-                 HEADER
-===================================== */
+/* ==== HEADER ==== */
 .stok-header {
     background: rgba(255, 255, 255, 0.78);
     -webkit-backdrop-filter: blur(14px);
@@ -287,9 +252,7 @@ body.night #greeting {
     font-size: 14px;
 }
 
-/* =====================================
-   FILTER BOX
-===================================== */
+/* ==== FILTER BOX ==== */
 .filter-box {
     background: rgba(255, 255, 255, 0.72);
     -webkit-backdrop-filter: blur(14px);
@@ -403,9 +366,7 @@ body.night #greeting {
 }
 
 
-/* =====================================
-   TABLE WRAPPER
-===================================== */
+/* ==== TABLE WRAPPER ==== */
 .stok-table-wrapper {
     background: rgba(255, 255, 255, 0.72);
     -webkit-backdrop-filter: blur(14px);
@@ -439,7 +400,7 @@ body.night #greeting {
     color: #2c3e50;
 }
 
-/* hover fix tanpa layout rusak */
+/* hover */
 .stok-table tbody tr {
     transition: background 0.2s ease;
 }
@@ -448,9 +409,7 @@ body.night #greeting {
     background: #f4f8ff;
 }
 
-/* =====================================
-   STATUS BADGE
-===================================== */
+/* ==== STATUS BADGE ==== */
 .status-aman,
 .status-menipis,
 .status-kosong {
@@ -476,9 +435,7 @@ body.night #greeting {
     color: #c62828;
 }
 
-/* =====================================
-   BUTTON
-===================================== */
+/* ==== BUTTON ==== */
 .btn-edit,
 .btn-delete {
     padding: 7px 7px;
@@ -492,52 +449,36 @@ body.night #greeting {
 .btn-edit {
     background: #1976d2;
     color: white;
-    align-items: center;
 }
 
 .btn-delete {
     background: #d32f2f;
     color: white;
-    align-items: center;
 }
 
-
-
-/* =====================================
-   MODAL FORM
-===================================== */
+/* ==== MODAL FORM ==== */
 /* OVERLAY */
 .modal-overlay {
     position: fixed;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.45);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 999;
 }
 
 /* CARD */
 .modal-form-card {
     background: white;
-
     width: 95%;
     max-width: 900px;
-
     padding: 28px;
-
     border-radius: 24px;
-
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
-
     max-height: 90vh;
     overflow-y: auto;
 }
@@ -574,7 +515,7 @@ body.night #greeting {
 .form-grid {
     display: grid;
     grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
+    repeat(auto-fit, minmax(220px, 1fr));
     gap: 16px;
 }
 
@@ -647,9 +588,7 @@ body.night #greeting {
     opacity: 0.95;
 }
 
-/* =====================================
-   TRACKING MODERN (VUE VERSION)
-===================================== */
+/* ==== TRACKING MODERN (VUE VERSION) ==== */
 .tracking-table {
     width: 90%;
     margin: 0 auto;
@@ -741,10 +680,7 @@ body.night #greeting {
     color: #333;
 }
 
-/* =====================================
-   BUTTON DETAIL
-===================================== */
-
+/* ==== BUTTON DETAIL ==== */
 .btn-detail {
     background: #1565c0;
     color: #fff;
@@ -760,10 +696,7 @@ body.night #greeting {
     transform: translateY(-1px);
 }
 
-/* =====================================
-   LAYOUT UTAMA (WAJIB PAKAI INI SAJA)
-===================================== */
-
+/* ==== LAYOUT UTAMA ==== */
 .tracking-modern {
     max-width: 1100px;
     margin: 0 auto;
@@ -774,10 +707,7 @@ body.night #greeting {
     gap: 24px;
 }
 
-/* =====================================
-   HEADER (VERSI FINAL)
-===================================== */
-
+/* ==== HEADER ==== */
 .tracking-header {
     width: 100%;
     display: flex;
@@ -793,10 +723,7 @@ body.night #greeting {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* =====================================
-   FORM (VERSI DASHBOARD - BUKAN POPUP)
-===================================== */
-
+/* ==== FORM Detail ==== */
 .tracking-form {
     width: 100%;
     display: grid;
@@ -815,10 +742,7 @@ body.night #greeting {
     margin: 4px 0 0;
 }
 
-/* =====================================
-   RESULT / TABLE WRAPPER
-===================================== */
-
+/* ==== RESULT / TABLE WRAPPER ==== */
 .tracking-result-modern {
     width: 100%;
     display: flex;
@@ -836,10 +760,7 @@ body.night #greeting {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* =====================================
-   STATUS BADGE
-===================================== */
-
+/* ==== STATUS BADGE ==== */
 .status {
     display: inline-block;
     padding: 6px 12px;
@@ -867,11 +788,7 @@ body.night #greeting {
     background: #e0e0e0;
     color: #333;
 }
-
-/* =====================================
-   BUTTONS
-===================================== */
-
+/* ==== BUTTONS ==== */
 .btn-save,
 .btn-reset {
     padding: 10px 16px;
@@ -886,7 +803,7 @@ body.night #greeting {
     color: #fff;
 }
 
-/* ====== MODAL DO ===== */
+/* ==== MODAL DO ==== */
 /* OVERLAY */
 .detail-modal-overlay {
     position: fixed;
@@ -913,7 +830,6 @@ body.night #greeting {
     overflow-y: auto;
     color: #333;
 }
-
 /* HEADER */
 .detail-modal-header {
     display: flex;
@@ -921,7 +837,6 @@ body.night #greeting {
     align-items: center;
     margin-bottom: 15px;
 }
-
 /* CLOSE */
 .detail-modal-close {
     background: #eee;
@@ -931,12 +846,11 @@ body.night #greeting {
     border-radius: 6px;
     cursor: pointer;
 }
-
 .detail-modal-close:hover {
     background: #ddd;
 }
 
-/* ===== TIMELINE TRACKING ===== */
+/* ==== TIMELINE TRACKING ==== */
 .timeline {
     position: relative;
     margin-top: 10px;
