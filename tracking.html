@@ -9,39 +9,28 @@
 </head>
 
 <body>
-
     <div id="tracking-app">
-
         <main class="tracking-modern">
-
             <!-- HEADER -->
             <header class="tracking-header">
-
                 <div class="header-left">
                     <h1>Tracking Bahan Ajar</h1>
                 </div>
-
                 <div class="header-right">
-
                     <!-- BUTTON TAMBAH DO -->
                     <button class="btn-add-popup" @click="toggleAddForm">
                         + Tambah DO
                     </button>
-
                     <!-- BUTTON KEMBALI -->
                     <a href="index.html" class="btn-back">
                         Kembali
                     </a>
-
                 </div>
-
             </header>
 
             <!-- FORM -->
             <section v-if="showAddForm" class="tracking-form">
-
                 <h3>Tambah Delivery Order</h3>
-
                 <!-- NO DO (AUTO, READONLY) -->
                 <div class="form-group">
                     <label for="noDO">No DO (otomatis)</label>
@@ -68,17 +57,12 @@
                 <!-- EKSPEDISI -->
                 <div class="form-group">
                     <label for="ekspedisi">Ekspedisi</label>
-
                     <select id="ekspedisi" v-model="formData.ekspedisi" aria-label="Pilih Ekspedisi">
-
                         <option value="">-- Pilih Ekspedisi --</option>
-
                         <option v-for="p in pengirimanList" :key="p.kode" :value="p.kode">
                             {{ p.nama }}
                         </option>
-
                     </select>
-
                     <p v-if="formErrors.ekspedisi">{{ formErrors.ekspedisi }}</p>
                 </div>
 
@@ -123,13 +107,11 @@
                         Simpan DO
                     </button>
                 </div>
-
             </section>
+
             <!-- TABLE TRACKING -->
             <section class="tracking-result-modern">
-
                 <table class="tracking-table">
-
                     <thead>
                         <tr>
                             <th>No DO</th>
@@ -145,38 +127,30 @@
 
                     <tbody>
                         <tr v-for="item in trackingList" :key="item.noDO">
-
                             <td>{{ item.noDO }}</td>
                             <td>{{ item.nim }}</td>
                             <td>{{ item.nama }}</td>
                             <td>{{ item.paket }}</td>
                             <td>{{ getPengiriman(item.ekspedisi) }}</td>
-
                             <td>
                                 <span class="status" :class="statusClass(item.status)">
                                     {{ item.status }}
                                 </span>
                             </td>
-
                             <td>Rp {{ item.total }}</td>
-
                             <td>
                                 <button class="btn-detail" @click="openDetail(item)">
                                     Detail
                                 </button>
                             </td>
-
                         </tr>
                     </tbody>
-
                 </table>
-
             </section>
 
             <!-- MODAL DETAIL -->
             <div v-if="showDetailModal && selectedDetail" class="detail-modal-overlay">
                 <div class="detail-modal-card">
-
                     <div class="detail-modal-header">
                         <h2>Detail Tracking {{ selectedDetail.noDO }}</h2>
                         <button class="detail-modal-close" @click="closeDetail">✕</button>
@@ -186,9 +160,7 @@
 
                     <div class="timeline">
                         <div v-for="p in selectedDetail.perjalanan" :key="p.waktu" class="timeline-item">
-
                             <div class="timeline-dot"></div>
-
                             <div class="timeline-content">
                                 <div class="timeline-time">
                                     {{ p.waktu }}
@@ -202,7 +174,6 @@
                 </div>
             </div>
         </main>
-
     </div>
 
     <!-- SCRIPT -->
