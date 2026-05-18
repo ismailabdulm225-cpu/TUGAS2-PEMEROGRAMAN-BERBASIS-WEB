@@ -202,7 +202,7 @@ createApp({
     }
 
 }).mount("#tracking-app");
-=======
+
 const { createApp } = Vue;
 createApp({
     data() {
