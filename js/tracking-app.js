@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { createApp } = Vue;
 createApp({
     data() {
@@ -408,4 +407,3 @@ createApp({
     }
 
 }).mount("#tracking-app");
->>>>>>> 0502e7c99e052c539a9c48de8b044e208a6b5f39
