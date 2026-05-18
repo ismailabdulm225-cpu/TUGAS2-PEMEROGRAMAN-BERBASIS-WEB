@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const app = Vue.createApp({
     data() {
         return {
@@ -54,4 +53,3 @@ const app = Vue.createApp({
     }
 })
 app.mount('#app')
->>>>>>> 0502e7c99e052c539a9c48de8b044e208a6b5f39
